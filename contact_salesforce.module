@@ -1,0 +1,23 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\contact\MessageInterface;
+
+/**
+ * @file
+ * Contains hook implementations for the contact salesforce module.
+ */
+
+/**
+ * Implements hook_entity_ENTITY_TYPE_insert().
+ */
+function contact_salesforce_contact_message_insert(MessageInterface $entity) {
+  \Drupal::service('contact_salesforce')->insertContactEntity($entity);
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function contact_salesforce_form_contact_form_form_alter(&$form, FormStateInterface $form_state) {
+  \Drupal::service('contact_salesforce')->addAdditionalFormElements($form, $form_state);
+}

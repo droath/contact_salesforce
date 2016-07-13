@@ -1,0 +1,5 @@
+contact_salesforce.config:
+  title: Contact salesforce
+  description: Manage contact salesforce configurations.
+  parent: system.admin_config_services
+  route_name: contact_salesforce.config

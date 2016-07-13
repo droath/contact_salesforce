@@ -1,0 +1,8 @@
+contact_salesforce.config:
+  path: '/admin/config/services/contact_salesforce'
+  defaults:
+    _title: 'Contact Salesforce'
+    _form: '\Drupal\contact_salesforce\Form\ContactSalesforceConfigForm'
+  requirements:
+    _permission: 'administer contact salesforce'
+

@@ -1,0 +1,8 @@
+type: module
+name: Contact salesforce
+description: Expose an admin UI to configure contact forms for Salesforce.
+core: 8.x
+package: Other
+configure: contact_salesforce.config
+dependencies:
+  - contact

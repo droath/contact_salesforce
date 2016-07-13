@@ -1,0 +1,13 @@
+{
+    "name": "drupal/contact_salesforce",
+    "description": "Allows contact form to send results to salesforce.com.",
+    "type": "drupal-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Travis Tomka",
+            "email": "underoathosx@gmail.com"
+        }
+    ],
+    "require": {}
+}

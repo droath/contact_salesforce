@@ -1,0 +1,7 @@
+services:
+  contact_salesforce:
+    class: \Drupal\contact_salesforce\ContactSalesforceService
+    arguments: ['@config.factory', '@contact_salesforce.logger']
+  contact_salesforce.logger:
+    parent: logger.channel_base
+    arguments: ['contact_salesforce']
